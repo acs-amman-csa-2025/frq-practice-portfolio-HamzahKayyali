@@ -1,6 +1,6 @@
 ## Problem statement and definition
 
-Print "Hello World!" to the screen using an instance method rather than a class method
+Reapeat problem 3 but in array lists.
 
 ## Things I did or review to prepare for this problem
 
