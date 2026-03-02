@@ -1,41 +1,39 @@
 public class Animal {
-    //Instance variables or attributes
+    // Instance variables or attributes
     private String species;
     private String zoo;
     private String name;
     private String sound;
 
-    //Constructor
+    // Constructor
 
-    public Animal(String Spec, String zo, String nam, String so){
+    public Animal(String Spec, String zo, String nam, String so) {
         species = Spec;
         zoo = zo;
         name = nam;
         sound = so;
     }
 
-    //This is all the getters
+    // This is all the getters
 
-    public String getSpecies(){
+    public String getSpecies() {
         return species;
     }
 
-    public String getZoo(){
+    public String getZoo() {
         return zoo;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public String getSound(){
+    public String getSound() {
         return sound;
     }
 
-    //This is a setter so you could set zoo to something different
-    public void setZoo(String newerZoo){
+    // This is a setter so you could set zoo to something different
+    public void setZoo(String newerZoo) {
         zoo = newerZoo;
     }
-
-    
 }
