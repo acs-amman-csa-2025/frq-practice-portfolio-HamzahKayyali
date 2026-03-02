@@ -27,10 +27,10 @@ public class Problem7 {
         
 
         //This makes the sentence of the thing
-        String name = list.get((int)(Math.random() * 4)).getName();
-        String zoo = list.get((int)(Math.random() * 4)).getZoo();
-        String species = list.get((int)(Math.random() * 4)).getSpecies();
-        String sound = list.get((int)(Math.random() * 4)).getSound();
+        String name = list.get((int)(Math.random() * 3)).getName();
+        String zoo = list.get((int)(Math.random() * 3)).getZoo();
+        String species = list.get((int)(Math.random() * 3)).getSpecies();
+        String sound = list.get((int)(Math.random() * 3)).getSound();
         System.out.println(name + " is a " + species + " that lives in " + zoo + " and says " + sound);
 
         
