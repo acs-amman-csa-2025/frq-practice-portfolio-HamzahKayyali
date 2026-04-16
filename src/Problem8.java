@@ -2,28 +2,21 @@ import java.util.*;
 import java.io.*;
 public class Problem8 {
     public static void main(String[] args) throws Exception {
-        File f = new File("data/Problem8.txt")
-        Scanner in = new Scanner(f);
-        ArrayList<String> names = new ArrayList<String>();
-        names.add("a");
-        names.add("b");
-        names.add("c");
-        names.add("d");
-        names.add("e");
-        names.add("f");
-        names.add("g");
-        names.add("h");
+          ArrayList<Person> people = new ArrayList<Person>();
+          File f = new File("Data/Problem8.txt");
+          Scanner input = new Scanner(f);
 
-        for(int i = 0; i < names.size(); i++){
-            String name = names.get(i);
-            phrase1 = in.next();
-            phrase2 = in.next();
-            phrase3 = in.next();
-            Person name = new Person(phrase1, phrase2, phrase3);
+          while(input.hasNextLine()){
+            String first = input.next();
+            String last = input.next();
+            int age = input.nextInt();
+            String career = input.next();
+            Person p = new Person(first, last, age, career);
+            people.add(p);
+
         }
-        
-       
-        
+        for(Person p: people){
+            System.out.println(p.getFirstName() + " " + p.getLastName());
+        }
     }
-    
 }
